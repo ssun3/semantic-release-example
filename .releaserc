@@ -1,7 +1,19 @@
 {
     "branches": [
-        "main",
-        "next"
+        {
+            "name": "+([0-9])?(.{+([0-9]),x}).x"
+        },
+        {
+            "name": "production"
+        },
+        {
+            "name": "staging",
+            "prerelease": "staging"
+        },
+        {
+            "name": "main",
+            "prerelease": "dev"
+        }
     ],
     "repositoryUrl": "git@github.com:ssun3/semantic-release-example.git",
     "plugins": [
